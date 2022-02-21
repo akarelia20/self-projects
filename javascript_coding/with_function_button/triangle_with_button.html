@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2> Enter a number to print Triangular pattern</h2>
+    <input type="number" id="num"></input>
+    <button onclick="triangle(document.getElementById('num').value)"> click me for answer </button>
+    <p> <span id="result"> </span> </p>
+    <p id="demo"></p>
+
+    <script>
+
+        function triangle(x) {
+            var result = "";
+            for (var i = 1; i <= x; i++) {
+                for (var j = 1; j <= i; j++) {
+                    result = result + j + " ";
+                }
+                result = result + "<br/>"; /* to excute in console.log use "\n" instead of <br/> */
+            }
+            document.getElementById("result").innerHTML = result;
+        }
+
+    </script>
+</body>
+
+</html>

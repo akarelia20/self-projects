@@ -1,0 +1,26 @@
+<html>
+
+<body>
+
+  <p id="print"> print the reverse of a NUMBER : <span id="answer"></span> </p>
+  <input type="number" id="input_reverse"></input>
+  <button onclick="reverse(document.getElementById('input_reverse').value)">Get Result</button>
+
+  <script>
+
+    function reverse(x) {
+      var number = 0;
+
+      for (; x > 0;) {
+        z = x % 10;
+        x = Math.floor(x / 10);
+        number = (number * 10) + z;
+      }
+      document.getElementById("answer").innerHTML = number;
+    }
+
+  </script>
+
+</body>
+
+</html>

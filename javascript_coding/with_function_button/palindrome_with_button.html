@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <p>Is a number palindrome? </p>
+    <input type="number" id="num"></input>
+    <button onclick="palindrome(document.getElementById('num').value)"> click me for answer </button>
+    <p> <span id="result"> </span> </p>
+
+    <script>
+        function palindrome(x) {
+            var y = x;
+            var answer = 0;
+            var z;
+            for (; y > 0;) {
+                z = y % 10;
+                y = Math.floor(y / 10);
+                answer = (answer * 10) + z;
+            }
+            if (answer == x) {
+                output = true;
+            } else {
+                output = false;
+            }
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>
+    x = 9 to the power y = 2 using Loop program
+    </h2>
+    <p>
+    the result is :
+    </p>
+    <p id="demo">
+    </p>
+    
+    <script>
+        function raise_to_the_power(x,y) {
+            var result = 1;
+            for (var i = 0; i < y; i++) {
+            result = result * x;
+            }
+            return result;
+        }
+        var x= 9;
+        var y= 2;
+        result = raise_to_the_power(x,y);
+
+    document.getElementById("demo").innerHTML = result;
+    </script>
+</body>
+
+</html>

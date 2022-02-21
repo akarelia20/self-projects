@@ -1,27 +1,27 @@
 <html>
 
-  <body>
-    <p id="print">
-      Swap of x = 123 and y = 269 is :
-      <br /> <br />
-      x =
-      <span id="new_x"></span>
-      and y =
-      <span id="new_y"></span>
-    </p>
+<body>
+  <p id="print">
+    Swap of x = 123 and y = 269 is :
+    <br /> <br />
+    x =
+    <span id="new_x"></span>
+    and y =
+    <span id="new_y"></span>
+  </p>
 
-    <script>
-      var x = 123;
-      var y = 269;
-      var temp = x; // using the temporary variable to store value of x //
+  <script>
+    var x = 123;
+    var y = 269;
+    var temp = x; // using the temporary variable to store value of x //
 
-      x = y; // x gets the value of y//
-      y = temp; // y gets the value of temp, since temp=x//
+    x = y; // x gets the value of y//
+    y = temp; // y gets the value of temp, since temp=x//
 
-      document.getElementById("new_x").innerHTML = x;
-      document.getElementById("new_y").innerHTML = y;
-    </script>
+    document.getElementById("new_x").innerHTML = x;
+    document.getElementById("new_y").innerHTML = y;
+  </script>
 
-  </body>
+</body>
 
 </html>

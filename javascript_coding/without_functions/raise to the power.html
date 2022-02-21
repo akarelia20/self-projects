@@ -1,25 +1,31 @@
 <!--raise to the power program by changing x and y values-->
 <html>
+
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-  <body>
-    <h2>
-      x = 9 to the power y = 2 using Loop program
-    </h2>
-    <p>
-      the result is :
-    </p>
-    <p id="demo">
-    </p>
-    <script>
-      var x= 9; /* x is base */
-      var y= 2; /* y is power */
-      var result = 1;
-       for (var i= 0; i<y; i++)
-       {
-         result = result * x;
-       }
-      document.getElementById("demo").innerHTML = result;
-    </script>
-  </body>
+
+<body>
+  <h2>
+    x = 9 to the power y = 2 using Loop program
+  </h2>
+  <p>
+    the result is :
+  </p>
+  <p id="demo">
+  </p>
+  <script>
+    var x = 9; /* x is base */
+    var y = 2; /* y is power */
+    var result = 1;
+    for (var i = 0; i < y; i++) {
+      result = result * x;
+    }
+    document.getElementById("demo").innerHTML = result;
+  </script>
+</body>
+
 </html>

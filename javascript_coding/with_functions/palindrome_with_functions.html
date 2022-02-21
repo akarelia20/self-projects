@@ -1,0 +1,32 @@
+<html>
+
+<body>
+    <p> <i> Is 1234554321 a palindrome? </i> </p>
+    <p> <b> <span id="result"> </span></b> </p>
+    <script>
+
+        function palindrome(x) {
+            for (; y > 0;) {
+                z = y % 10;
+                y = Math.floor(y / 10);
+                answer = (answer * 10) + z;
+            }
+            if (answer === x) {
+                output = true;
+            } else {
+                output = false;
+            }
+            return output;
+        }
+
+        var x = 1234554321;
+        var y = x;
+        var answer = 0;
+        var z;
+        var output= palindrome(x);
+
+        document.getElementById("result").innerHTML = output;
+    </script>
+</body>
+
+</html>
