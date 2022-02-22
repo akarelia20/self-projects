@@ -1,0 +1,10 @@
+div {
+    width:40%;
+    margin:50px auto;
+}
+button {
+    padding:10px;
+    background-color: aqua;
+    color:blueviolet;
+    border-radius: 20px;
+}

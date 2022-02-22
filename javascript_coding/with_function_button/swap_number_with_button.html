@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <p id="print">
+    <p>Enter the value of x and y below and click "reverse it" to see the new reversed values</p>
+    <p> x</p>
+    <input type="number" id="x">
+    <p> y</p>
+    <input type="number" id="y">
+    <button onclick="swapvalue(document.getElementById('x').value, document.getElementById('y').value)">
+        reverse it
+    </button>
+    <p>New value of x is: <span id="new_x"></span></p>
+    <p>New value of x is: <span id="new_y"></span></p>
+    </p>
+
+    <script>
+        function swapvalue(a, b) {
+            var temp = a;
+            a = b;
+            b = temp;
+            document.getElementById("new_x").innerHTML = a;
+            document.getElementById("new_y").innerHTML = b;
+        }
+    </script>
+
+</body>
+
+</html>

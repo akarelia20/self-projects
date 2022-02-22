@@ -1,0 +1,59 @@
+<html>
+
+<body>
+    <p id="print">
+        Swap of x = 123 and y = 269 is :
+        <br /> <br />
+        <table>
+            
+        </table>
+        x =
+        <span id="new_x"></span>
+        and y =
+        <span id="new_y"></span>
+    </p>
+
+    <script>
+        function swapNumWithReturn(a,b) {
+            var temp = a; // using the temporary variable to store value of x //
+            a = b; // x gets the value of y//
+            b = temp; // y gets the value of temp, since temp=x
+            return {a_value:a, b_value: b};
+        }
+
+        function swapNumWithObjectReturn(swap_object) {
+            var temp = swap_object.x_value; // using the temporary variable to store value of x //
+            swap_object.x_value = swap_object.y_value; // x gets the value of y//
+            swap_object.y_value = temp; // y gets the value of temp, since temp=x
+            return swap_object;
+        }
+
+        /*
+        * concept of pass by reference
+        */
+        function swapNumWithObjectReference(swap_object) {
+            var temp = swap_object.x_value; // using the temporary variable to store value of x //
+            swap_object.x_value = swap_object.y_value; // x gets the value of y//
+            swap_object.y_value = temp; // y gets the value of temp, since temp=x
+        }
+
+        var x = 123;
+        var y = 269;         
+        // example 1 : pass by value
+        var result = swapNumWithReturn(x, y);
+
+        // example 2: assuming we do not know about concept of reference
+        var obj = {x_value:x, y_value: y};
+        var resultWithObj = swapNumWithObjectReturn(obj);
+
+        // example 3 : using the concept of reference
+        var new_obj = {x_value:x, y_value: y};
+        swapNumWithObjectReference(new_obj);
+        // output from example 3
+        document.getElementById("new_x").innerHTML = new_obj.x_value;
+        document.getElementById("new_y").innerHTML = new_obj.y_value;
+    </script>
+
+</body>
+
+</html>

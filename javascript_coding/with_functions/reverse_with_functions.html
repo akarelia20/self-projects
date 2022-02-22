@@ -1,0 +1,29 @@
+<html>
+
+<body>
+
+  <p id="print"> print the reverse of a NUMBER 1234567 : <span id="answer"></span> </p>
+
+  <script>
+
+    function reverse(x) {
+      var number = 0;
+
+      for (; x > 0;) {
+        z = x % 10;
+        x = Math.floor(x / 10);
+        number = (number * 10) + z;
+      }
+      return number;
+    }
+
+    var x = 1234567;
+    var result = reverse(x);
+
+    document.getElementById("answer").innerHTML = result;
+
+  </script>
+
+</body>
+
+</html>

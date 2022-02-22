@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2> Print Triangular pattern of numbers</h2>
+    <p id="demo"></p>
+
+    <script>
+
+        function triangle(x) {
+            var result = "";
+            for (var i = 1; i <= n; i++) {
+                for (var j = 1; j <= i; j++) {
+                    result = result + j + " ";
+                }
+                result = result + "<br/>"; /* to excute in console.log use "\n" instead of <br/> */
+            }
+            return result;
+        }
+        var n = 4;
+        var final = triangle(n);
+        
+        document.getElementById("demo").innerHTML = final;
+
+    </script>
+</body>
+
+</html>
