@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <table>
+            <tr>
+                <td><span id="cell1"></span></td>
+                <td><span id="cell2"></span></td>
+                <td><span id="cell3"></span></td>
+            </tr>
+            <tr>
+                <td><span id="cell4"></span></td>
+                <td><span id="cell5"></span></td>
+                <td><span id="cell6"></span></td>
+            </tr>
+
+            <tr>
+                <td><span id="cell7"></span></td>
+                <td><span id="cell8"></span></td>
+                <td><span id="cell9"></span></td>
+            </tr>
+        </table>
+
+        <form>
+            <div>
+                <lable>Enter the cell Number</lable>
+                <input type="number" id="number">
+            </div>
+            <div>
+                <lable>Enter X or 0</lable>
+                <input id="value" type="text">
+            </div>
+            <button type="button"
+                onclick="displayValues(document.getElementById('number').value, document.getElementById('value').value)">Enter</button>
+        </form>
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
