@@ -2,14 +2,16 @@
 
 <body>
     <p id="print">
-        <p>Enter the value of x and y below and click "reverse it" to see the new reversed values</p>
-        <p> x</p>
-        <input type="number" id="x">
-        <p> y</p>
-        <input type="number" id="y">
-        <button onclick= "swapvalue(document.getElementById('x').value, document.getElementById('y').value)" >reverse it</button>
-        <p>New value of x is: <span id="new_x"></span></p>
-        <p>New value of x is: <span id="new_y"></span></p>
+    <p>Enter the value of x and y below and click "reverse it" to see the new reversed values</p>
+    <p> x</p>
+    <input type="number" id="x">
+    <p> y</p>
+    <input type="number" id="y">
+    <button onclick="swapvalue(document.getElementById('x').value, document.getElementById('y').value)">
+        reverse it
+    </button>
+    <p>New value of x is: <span id="new_x"></span></p>
+    <p>New value of x is: <span id="new_y"></span></p>
     </p>
 
     <script>
@@ -17,9 +19,8 @@
             var temp = a;
             a = b;
             b = temp;
-            var obj = { new_a: a, new_b: b };
-            document.getElementById("new_x").innerHTML = obj.new_a;
-            document.getElementById("new_y").innerHTML = obj.new_b;
+            document.getElementById("new_x").innerHTML = a;
+            document.getElementById("new_y").innerHTML = b;
         }
     </script>
 
